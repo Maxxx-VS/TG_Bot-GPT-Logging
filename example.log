@@ -1,0 +1,1246 @@
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org:443
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getMe HTTP/1.1" 200 194
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org:443
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 23
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org:443
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getMe HTTP/1.1" 200 194
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org:443
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org:443
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getMe HTTP/1.1" 200 194
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org:443
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 1100
+DEBUG:root:User 1503721661 sent a message: /logging
+DEBUG:root:User 1503721661 sent a message: /logging
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:1234
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:1234
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731981&timeout=20 HTTP/1.1" 200 561
+DEBUG:root:User 1503721661 sent a message: /logging
+ERROR:TeleBot:Infinity polling exception: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000015BD16E83D0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:1234
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1294, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1340, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1289, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1048, in _send_output
+    self.send(msg)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 986, in send
+    self.connect()
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000015BD16E83D0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 799, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000015BD16E83D0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 957, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1045, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1120, in __threaded_polling
+    raise e
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1082, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 147, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 90, in run
+    task(*args, **kwargs)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 6793, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\Bot+GPT\bot_template.py", line 90, in handle_message
+    response = ask_chatgpt(user_id, message.text)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\Bot+GPT\bot_template.py", line 38, in ask_chatgpt
+    response = requests.post(GPT_API_URL, headers=REQUEST_HEADER, json=data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000015BD16E83D0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org:443
+ERROR:TeleBot:Infinity polling exception: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000015BD1B55FD0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1294, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1340, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1289, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1048, in _send_output
+    self.send(msg)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 986, in send
+    self.connect()
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000015BD1B55FD0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 799, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000015BD1B55FD0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 957, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1045, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1120, in __threaded_polling
+    raise e
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1082, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 147, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 90, in run
+    task(*args, **kwargs)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 6793, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\Bot+GPT\bot_template.py", line 90, in handle_message
+    response = ask_chatgpt(user_id, message.text)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\Bot+GPT\bot_template.py", line 38, in ask_chatgpt
+    response = requests.post(GPT_API_URL, headers=REQUEST_HEADER, json=data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000015BD1B55FD0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731982&timeout=20 HTTP/1.1" 409 143
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org:443
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731982&timeout=20 HTTP/1.1" 409 143
+ERROR:TeleBot:Infinity polling exception: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 462, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1386, in getresponse
+    response.begin()
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 325, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 286, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1315, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\ssl.py", line 1167, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 799, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\packages\six.py", line 770, in reraise
+    raise value
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 469, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 358, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 957, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1045, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1120, in __threaded_polling
+    raise e
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1081, in __threaded_polling
+    polling_thread.raise_exceptions()
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 108, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 90, in run
+    task(*args, **kwargs)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 651, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1),
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 625, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates, long_polling_timeout)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\apihelper.py", line 323, in get_updates
+    return _make_request(token, method_url, params=payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\apihelper.py", line 158, in _make_request
+    result = _get_req_session().request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)
+
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org:443
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org:443
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getMe HTTP/1.1" 200 194
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org:443
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 559
+DEBUG:root:User 1503721661 started the bot
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org:443
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "POST /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/sendMessage?chat_id=1503721661&text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%21+%D0%AF+%D0%B1%D0%BE%D1%82%2C+%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B9+%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B5%D1%82+GPT+%D0%B4%D0%BB%D1%8F+%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D0%BE%D0%B2+%D0%BD%D0%B0+%D0%B2%D0%B0%D1%88%D0%B8+%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B.+%D0%9F%D1%80%D0%BE%D1%81%D1%82%D0%BE+%D0%BD%D0%B0%D0%BF%D0%B8%D1%88%D0%B8+%D0%BC%D0%BD%D0%B5+%D1%87%D1%82%D0%BE-%D0%BD%D0%B8%D0%B1%D1%83%D0%B4%D1%8C.&reply_to_message_id=792 HTTP/1.1" 200 1330
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731983&timeout=20 HTTP/1.1" 200 499
+DEBUG:root:User 1503721661 sent a message: dfdf
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:1234
+ERROR:TeleBot:Infinity polling exception: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002520B51FE90>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1294, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1340, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1289, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1048, in _send_output
+    self.send(msg)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 986, in send
+    self.connect()
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002520B51FE90>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 799, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002520B51FE90>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 957, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1045, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1120, in __threaded_polling
+    raise e
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1082, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 147, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 90, in run
+    task(*args, **kwargs)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 6793, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\Bot+GPT\bot_template.py", line 90, in handle_message
+    response = ask_chatgpt(user_id, message.text)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\Bot+GPT\bot_template.py", line 38, in ask_chatgpt
+    response = requests.post(GPT_API_URL, headers=REQUEST_HEADER, json=data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002520B51FE90>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731984&timeout=20 HTTP/1.1" 200 561
+DEBUG:root:User 1503721661 sent a message: /logging
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:1234
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org:443
+ERROR:TeleBot:Infinity polling exception: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002520B518E10>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1294, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1340, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1289, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1048, in _send_output
+    self.send(msg)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 986, in send
+    self.connect()
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002520B518E10>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 799, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002520B518E10>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 957, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1045, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1120, in __threaded_polling
+    raise e
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1082, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 147, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 90, in run
+    task(*args, **kwargs)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 6793, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\Bot+GPT\bot_template.py", line 90, in handle_message
+    response = ask_chatgpt(user_id, message.text)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\Bot+GPT\bot_template.py", line 38, in ask_chatgpt
+    response = requests.post(GPT_API_URL, headers=REQUEST_HEADER, json=data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002520B518E10>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org:443
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731985&timeout=20 HTTP/1.1" 409 143
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731985&timeout=20 HTTP/1.1" 200 561
+DEBUG:root:User 1503721661 sent a message: /logging
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:1234
+ERROR:TeleBot:Infinity polling exception: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002520BA024D0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1294, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1340, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1289, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1048, in _send_output
+    self.send(msg)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 986, in send
+    self.connect()
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002520BA024D0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 799, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002520BA024D0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 957, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1045, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1120, in __threaded_polling
+    raise e
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1082, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 147, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 90, in run
+    task(*args, **kwargs)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 6793, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\Bot+GPT\bot_template.py", line 90, in handle_message
+    response = ask_chatgpt(user_id, message.text)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\Bot+GPT\bot_template.py", line 38, in ask_chatgpt
+    response = requests.post(GPT_API_URL, headers=REQUEST_HEADER, json=data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002520BA024D0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org:443
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getMe HTTP/1.1" 200 194
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org:443
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 561
+DEBUG:root:User 1503721661 sent a message: /logging
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:1234
+ERROR:TeleBot:Infinity polling exception: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023FB9299990>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1294, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1340, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1289, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1048, in _send_output
+    self.send(msg)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 986, in send
+    self.connect()
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000023FB9299990>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 799, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023FB9299990>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 957, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1045, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1120, in __threaded_polling
+    raise e
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1082, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 147, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 90, in run
+    task(*args, **kwargs)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 6793, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\Bot+GPT\bot_template.py", line 90, in handle_message
+    response = ask_chatgpt(user_id, message.text)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\Bot+GPT\bot_template.py", line 38, in ask_chatgpt
+    response = requests.post(GPT_API_URL, headers=REQUEST_HEADER, json=data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023FB9299990>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731987&timeout=20 HTTP/1.1" 200 561
+DEBUG:root:User 1503721661 sent a message: /logging
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:1234
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org:443
+ERROR:TeleBot:Infinity polling exception: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023FB9741710>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1294, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1340, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1289, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1048, in _send_output
+    self.send(msg)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 986, in send
+    self.connect()
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x0000023FB9741710>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 799, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023FB9741710>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 957, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1045, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1120, in __threaded_polling
+    raise e
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1082, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 147, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 90, in run
+    task(*args, **kwargs)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 6793, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\Bot+GPT\bot_template.py", line 90, in handle_message
+    response = ask_chatgpt(user_id, message.text)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\Bot+GPT\bot_template.py", line 38, in ask_chatgpt
+    response = requests.post(GPT_API_URL, headers=REQUEST_HEADER, json=data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023FB9741710>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org:443
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731988&timeout=20 HTTP/1.1" 409 143
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731988&timeout=20 HTTP/1.1" 200 23
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731988&timeout=20 HTTP/1.1" 200 23
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731988&timeout=20 HTTP/1.1" 200 561
+DEBUG:root:User 1503721661 sent a message: /logging
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:1234
+DEBUG:urllib3.connectionpool:http://localhost:1234 "POST /v1/chat/completions HTTP/1.1" 200 515
+DEBUG:root:Получили ответ от  GPT: Логирование
+
+
+DEBUG:root:Сохранение истории от пользователя 1503721661
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org:443
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "POST /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/sendMessage?chat_id=1503721661&text=%D0%9B%D0%BE%D0%B3%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%0A%0A&reply_to_message_id=799 HTTP/1.1" 200 932
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731989&timeout=20 HTTP/1.1" 200 23
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731989&timeout=20 HTTP/1.1" 200 561
+DEBUG:root:User 1503721661 sent a message: /logging
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:1234
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731990&timeout=20 HTTP/1.1" 200 538
+DEBUG:root:User 1503721661 sent a message: как дела
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:1234
+DEBUG:urllib3.connectionpool:http://localhost:1234 "POST /v1/chat/completions HTTP/1.1" 200 515
+DEBUG:root:Получили ответ от  GPT: Логирование
+
+
+DEBUG:root:Сохранение истории от пользователя 1503721661
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "POST /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/sendMessage?chat_id=1503721661&text=%D0%9B%D0%BE%D0%B3%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%0A%0A&reply_to_message_id=801 HTTP/1.1" 200 932
+DEBUG:urllib3.connectionpool:http://localhost:1234 "POST /v1/chat/completions HTTP/1.1" 200 503
+DEBUG:root:Получили ответ от  GPT: Как дела?
+DEBUG:root:Сохранение истории от пользователя 1503721661
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org:443
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "POST /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/sendMessage?chat_id=1503721661&text=%D0%9A%D0%B0%D0%BA+%D0%B4%D0%B5%D0%BB%D0%B0%3F&reply_to_message_id=802 HTTP/1.1" 200 887
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731991&timeout=20 HTTP/1.1" 200 23
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731991&timeout=20 HTTP/1.1" 200 23
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org:443
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getMe HTTP/1.1" 200 194
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org:443
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 561
+DEBUG:root:User 1503721661 sent a message: /logging
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:1234
+DEBUG:urllib3.connectionpool:http://localhost:1234 "POST /v1/chat/completions HTTP/1.1" 200 529
+DEBUG:root:Получили ответ от  GPT: Применяется для записи
+DEBUG:root:Сохранение истории от пользователя 1503721661
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org:443
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "POST /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/sendMessage?chat_id=1503721661&text=%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D1%8F%D0%B5%D1%82%D1%81%D1%8F+%D0%B4%D0%BB%D1%8F+%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8&reply_to_message_id=805 HTTP/1.1" 200 988
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731992&timeout=20 HTTP/1.1" 200 23
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org:443
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getMe HTTP/1.1" 200 194
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org:443
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 559
+DEBUG:root:User 1503721661 started the bot
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org:443
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "POST /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/sendMessage?chat_id=1503721661&text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%21+%D0%AF+%D0%B1%D0%BE%D1%82%2C+%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B9+%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B5%D1%82+GPT+%D0%B4%D0%BB%D1%8F+%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D0%BE%D0%B2+%D0%BD%D0%B0+%D0%B2%D0%B0%D1%88%D0%B8+%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B.+%D0%9F%D1%80%D0%BE%D1%81%D1%82%D0%BE+%D0%BD%D0%B0%D0%BF%D0%B8%D1%88%D0%B8+%D0%BC%D0%BD%D0%B5+%D1%87%D1%82%D0%BE-%D0%BD%D0%B8%D0%B1%D1%83%D0%B4%D1%8C.&reply_to_message_id=807 HTTP/1.1" 200 1330
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731993&timeout=20 HTTP/1.1" 200 23
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731993&timeout=20 HTTP/1.1" 200 561
+DEBUG:root:User 1503721661 sent a message: /logging
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:1234
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731994&timeout=20 HTTP/1.1" 200 23
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731994&timeout=20 HTTP/1.1" 200 23
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731994&timeout=20 HTTP/1.1" 200 23
+DEBUG:urllib3.connectionpool:http://localhost:1234 "POST /v1/chat/completions HTTP/1.1" 200 659
+DEBUG:root:Получили ответ от  GPT: Спасибо, я буду помогать вам с логгированием. Какую консоль используете для просмотра логов?
+DEBUG:root:Сохранение истории от пользователя 1503721661
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "POST /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/sendMessage?chat_id=1503721661&text=%D0%A1%D0%BF%D0%B0%D1%81%D0%B8%D0%B1%D0%BE%2C+%D1%8F+%D0%B1%D1%83%D0%B4%D1%83+%D0%BF%D0%BE%D0%BC%D0%BE%D0%B3%D0%B0%D1%82%D1%8C+%D0%B2%D0%B0%D0%BC+%D1%81+%D0%BB%D0%BE%D0%B3%D0%B3%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%D0%BC.+%D0%9A%D0%B0%D0%BA%D1%83%D1%8E+%D0%BA%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C+%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B5%D1%82%D0%B5+%D0%B4%D0%BB%D1%8F+%D0%BF%D1%80%D0%BE%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B0+%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%3F&reply_to_message_id=809 HTTP/1.1" 200 1343
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731994&timeout=20 HTTP/1.1" 200 23
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731994&timeout=20 HTTP/1.1" 200 561
+DEBUG:root:User 1503721661 sent a message: /logging
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:1234
+ERROR:TeleBot:Infinity polling exception: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002648CAFD310>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1294, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1340, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1289, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1048, in _send_output
+    self.send(msg)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 986, in send
+    self.connect()
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002648CAFD310>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 799, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002648CAFD310>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 957, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1045, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1120, in __threaded_polling
+    raise e
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1082, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 147, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 90, in run
+    task(*args, **kwargs)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 6793, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\Bot+GPT\bot_template.py", line 86, in handle_message
+    response = ask_chatgpt(user_id, message.text)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\Bot+GPT\bot_template.py", line 38, in ask_chatgpt
+    response = requests.post(GPT_API_URL, headers=REQUEST_HEADER, json=data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002648CAFD310>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org:443
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731995&timeout=20 HTTP/1.1" 409 143
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731995&timeout=20 HTTP/1.1" 200 23
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731995&timeout=20 HTTP/1.1" 200 23
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731995&timeout=20 HTTP/1.1" 200 23
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731995&timeout=20 HTTP/1.1" 200 23
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731995&timeout=20 HTTP/1.1" 200 23
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731995&timeout=20 HTTP/1.1" 200 561
+DEBUG:root:User 1503721661 sent a message: /logging
+DEBUG:urllib3.connectionpool:Starting new HTTP connection (1): localhost:1234
+ERROR:TeleBot:Infinity polling exception: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002648CFB50D0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+ERROR:TeleBot:Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1294, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1340, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1289, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1048, in _send_output
+    self.send(msg)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 986, in send
+    self.connect()
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002648CFB50D0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 799, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002648CFB50D0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 957, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1045, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1120, in __threaded_polling
+    raise e
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1082, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 147, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 90, in run
+    task(*args, **kwargs)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 6793, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\Bot+GPT\bot_template.py", line 86, in handle_message
+    if user_id not in chat_history:
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\Bot+GPT\bot_template.py", line 38, in ask_chatgpt
+    "max_tokens": MAX_TOKENS,
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002648CFB50D0>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): api.telegram.org:443
+DEBUG:urllib3.connectionpool:https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731996&timeout=20 HTTP/1.1" 409 143
+ERROR:TeleBot:Infinity polling: polling exited
+ERROR:TeleBot:Break infinity polling
+2024-03-27 21:22:59,012 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2024-03-27 21:23:00,468 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getMe HTTP/1.1" 200 194
+2024-03-27 21:23:00,471 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2024-03-27 21:23:01,734 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 559
+2024-03-27 21:23:01,735 - DEBUG - User 1503721661 started the bot
+2024-03-27 21:23:01,739 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2024-03-27 21:23:03,177 - DEBUG - https://api.telegram.org:443 "POST /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/sendMessage?chat_id=1503721661&text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%21+%D0%AF+%D0%B1%D0%BE%D1%82%2C+%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B9+%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B5%D1%82+GPT+%D0%B4%D0%BB%D1%8F+%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D0%BE%D0%B2+%D0%BD%D0%B0+%D0%B2%D0%B0%D1%88%D0%B8+%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B.+%D0%9F%D1%80%D0%BE%D1%81%D1%82%D0%BE+%D0%BD%D0%B0%D0%BF%D0%B8%D1%88%D0%B8+%D0%BC%D0%BD%D0%B5+%D1%87%D1%82%D0%BE-%D0%BD%D0%B8%D0%B1%D1%83%D0%B4%D1%8C.&reply_to_message_id=813 HTTP/1.1" 200 1330
+2024-03-27 21:23:15,097 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731997&timeout=20 HTTP/1.1" 200 526
+2024-03-27 21:23:15,099 - DEBUG - User 1503721661 sent a message: кто ты
+2024-03-27 21:23:15,104 - DEBUG - Starting new HTTP connection (1): localhost:1234
+2024-03-27 21:23:35,190 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731998&timeout=20 HTTP/1.1" 200 23
+2024-03-27 21:23:55,274 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731998&timeout=20 HTTP/1.1" 200 23
+2024-03-27 21:24:05,390 - DEBUG - http://localhost:1234 "POST /v1/chat/completions HTTP/1.1" 200 669
+2024-03-27 21:24:05,391 - DEBUG - Получили ответ от  GPT: Я - это речь, которая произносится с помощью голосовых структур и соответствующих иммунных оценок.
+2024-03-27 21:24:05,392 - DEBUG - Сохранение истории от пользователя 1503721661
+2024-03-27 21:24:05,579 - DEBUG - https://api.telegram.org:443 "POST /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/sendMessage?chat_id=1503721661&text=%D0%AF+-+%D1%8D%D1%82%D0%BE+%D1%80%D0%B5%D1%87%D1%8C%2C+%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%B0%D1%8F+%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%BD%D0%BE%D1%81%D0%B8%D1%82%D1%81%D1%8F+%D1%81+%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E+%D0%B3%D0%BE%D0%BB%D0%BE%D1%81%D0%BE%D0%B2%D1%8B%D1%85+%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80+%D0%B8+%D1%81%D0%BE%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D1%83%D1%8E%D1%89%D0%B8%D1%85+%D0%B8%D0%BC%D0%BC%D1%83%D0%BD%D0%BD%D1%8B%D1%85+%D0%BE%D1%86%D0%B5%D0%BD%D0%BE%D0%BA.&reply_to_message_id=815 HTTP/1.1" 200 1339
+2024-03-27 21:24:15,363 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731998&timeout=20 HTTP/1.1" 200 23
+2024-03-27 21:24:35,454 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731998&timeout=20 HTTP/1.1" 200 23
+2024-03-27 21:24:38,029 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731998&timeout=20 HTTP/1.1" 200 561
+2024-03-27 21:24:38,031 - DEBUG - User 1503721661 sent a message: /logging
+2024-03-27 21:24:38,039 - DEBUG - Starting new HTTP connection (1): localhost:1234
+2024-03-27 21:24:58,126 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731999&timeout=20 HTTP/1.1" 200 23
+2024-03-27 21:25:18,216 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731999&timeout=20 HTTP/1.1" 200 23
+2024-03-27 21:25:38,307 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731999&timeout=20 HTTP/1.1" 200 23
+2024-03-27 21:25:58,395 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731999&timeout=20 HTTP/1.1" 200 23
+2024-03-27 21:26:18,482 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731999&timeout=20 HTTP/1.1" 200 23
+2024-03-27 21:26:28,890 - DEBUG - http://localhost:1234 "POST /v1/chat/completions HTTP/1.1" 200 762
+2024-03-27 21:26:28,891 - DEBUG - Получили ответ от  GPT: Это относится к функциям языка Python для записи информации в файл или консоль, позволяя программам отслеживать свое выполнение и обнаруживать ошибки.
+2024-03-27 21:26:28,891 - DEBUG - Сохранение истории от пользователя 1503721661
+2024-03-27 21:26:29,018 - DEBUG - https://api.telegram.org:443 "POST /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/sendMessage?chat_id=1503721661&text=%D0%AD%D1%82%D0%BE+%D0%BE%D1%82%D0%BD%D0%BE%D1%81%D0%B8%D1%82%D1%81%D1%8F+%D0%BA+%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F%D0%BC+%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0+Python+%D0%B4%D0%BB%D1%8F+%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8+%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%B8+%D0%B2+%D1%84%D0%B0%D0%B9%D0%BB+%D0%B8%D0%BB%D0%B8+%D0%BA%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C%2C+%D0%BF%D0%BE%D0%B7%D0%B2%D0%BE%D0%BB%D1%8F%D1%8F+%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0%D0%BC+%D0%BE%D1%82%D1%81%D0%BB%D0%B5%D0%B6%D0%B8%D0%B2%D0%B0%D1%82%D1%8C+%D1%81%D0%B2%D0%BE%D0%B5+%D0%B2%D1%8B%D0%BF%D0%BE%D0%BB%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5+%D0%B8+%D0%BE%D0%B1%D0%BD%D0%B0%D1%80%D1%83%D0%B6%D0%B8%D0%B2%D0%B0%D1%82%D1%8C+%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B8.&reply_to_message_id=817 HTTP/1.1" 200 1626
+2024-03-27 21:26:38,570 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817731999&timeout=20 HTTP/1.1" 200 23
+2024-03-27 21:26:47,572 - ERROR - Infinity polling: polling exited
+2024-03-27 21:26:47,572 - ERROR - Break infinity polling
+2024-03-27 21:26:49,989 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2024-03-27 21:26:52,105 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getMe HTTP/1.1" 200 194
+2024-03-27 21:26:52,109 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2024-03-27 21:26:53,445 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 559
+2024-03-27 21:26:53,446 - DEBUG - User 1503721661 started the bot
+2024-03-27 21:26:53,451 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2024-03-27 21:26:54,737 - DEBUG - https://api.telegram.org:443 "POST /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/sendMessage?chat_id=1503721661&text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%21+%D0%AF+%D0%B1%D0%BE%D1%82%2C+%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B9+%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B5%D1%82+GPT+%D0%B4%D0%BB%D1%8F+%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D0%BE%D0%B2+%D0%BD%D0%B0+%D0%B2%D0%B0%D1%88%D0%B8+%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B.+%D0%9F%D1%80%D0%BE%D1%81%D1%82%D0%BE+%D0%BD%D0%B0%D0%BF%D0%B8%D1%88%D0%B8+%D0%BC%D0%BD%D0%B5+%D1%87%D1%82%D0%BE-%D0%BD%D0%B8%D0%B1%D1%83%D0%B4%D1%8C.&reply_to_message_id=819 HTTP/1.1" 200 1330
+2024-03-27 21:26:56,877 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817732000&timeout=20 HTTP/1.1" 200 561
+2024-03-27 21:26:56,878 - DEBUG - User 1503721661 sent a message: /logging
+2024-03-27 21:26:56,884 - DEBUG - Starting new HTTP connection (1): localhost:1234
+2024-03-27 21:27:07,500 - DEBUG - http://localhost:1234 "POST /v1/chat/completions HTTP/1.1" 200 514
+2024-03-27 21:27:07,501 - DEBUG - Получили ответ от  GPT: Сохраняю логи.
+2024-03-27 21:27:07,501 - DEBUG - Сохранение истории от пользователя 1503721661
+2024-03-27 21:27:07,504 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2024-03-27 21:27:08,863 - DEBUG - https://api.telegram.org:443 "POST /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/sendMessage?chat_id=1503721661&text=%D0%A1%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D1%8F%D1%8E+%D0%BB%D0%BE%D0%B3%D0%B8.&reply_to_message_id=821 HTTP/1.1" 200 940
+2024-03-27 21:27:16,974 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817732001&timeout=20 HTTP/1.1" 200 23
+2024-03-27 21:27:17,551 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817732001&timeout=20 HTTP/1.1" 200 561
+2024-03-27 21:27:17,552 - DEBUG - User 1503721661 sent a message: /logging
+2024-03-27 21:27:17,555 - DEBUG - Starting new HTTP connection (1): localhost:1234
+2024-03-27 21:27:37,650 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817732002&timeout=20 HTTP/1.1" 200 23
+2024-03-27 21:27:39,479 - DEBUG - http://localhost:1234 "POST /v1/chat/completions HTTP/1.1" 200 526
+2024-03-27 21:27:39,480 - DEBUG - Получили ответ от  GPT: Вывожу лог в консоль.
+2024-03-27 21:27:39,480 - DEBUG - Сохранение истории от пользователя 1503721661
+2024-03-27 21:27:39,639 - DEBUG - https://api.telegram.org:443 "POST /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/sendMessage?chat_id=1503721661&text=%D0%92%D1%8B%D0%B2%D0%BE%D0%B6%D1%83+%D0%BB%D0%BE%D0%B3+%D0%B2+%D0%BA%D0%BE%D0%BD%D1%81%D0%BE%D0%BB%D1%8C.&reply_to_message_id=823 HTTP/1.1" 200 972
+2024-03-27 21:27:57,741 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817732002&timeout=20 HTTP/1.1" 200 23
+2024-03-27 21:28:07,126 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817732002&timeout=20 HTTP/1.1" 200 561
+2024-03-27 21:28:07,128 - DEBUG - User 1503721661 sent a message: /logging
+2024-03-27 21:28:07,133 - DEBUG - Starting new HTTP connection (1): localhost:1234
+2024-03-27 21:28:11,197 - ERROR - Infinity polling exception: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002040A81FB10>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+2024-03-27 21:28:11,211 - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 416, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1294, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1340, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1289, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1048, in _send_output
+    self.send(msg)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 986, in send
+    self.connect()
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002040A81FB10>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\connectionpool.py", line 799, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002040A81FB10>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 957, in infinity_polling
+    self.polling(non_stop=True, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1045, in polling
+    self.__threaded_polling(non_stop=non_stop, interval=interval, timeout=timeout, long_polling_timeout=long_polling_timeout,
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1120, in __threaded_polling
+    raise e
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 1082, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 147, in raise_exceptions
+    raise self.exception_info
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\util.py", line 90, in run
+    task(*args, **kwargs)
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\telebot\__init__.py", line 6793, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\Bot+GPT\bot_template.py", line 90, in handle_message
+    response = ask_chatgpt(user_id, message.text)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\Bot+GPT\bot_template.py", line 42, in ask_chatgpt
+    response = requests.post(GPT_API_URL, headers=REQUEST_HEADER, json=data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hot-z\AppData\Local\Programs\Python\Python311\Lib\site-packages\requests\adapters.py", line 519, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=1234): Max retries exceeded with url: /v1/chat/completions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002040A81FB10>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+
+2024-03-27 21:28:14,224 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2024-03-27 21:28:15,788 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817732003&timeout=20 HTTP/1.1" 409 143
+2024-03-27 21:28:35,791 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817732003&timeout=20 HTTP/1.1" 200 23
+2024-03-27 21:28:55,881 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817732003&timeout=20 HTTP/1.1" 200 23
+2024-03-27 21:29:15,973 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817732003&timeout=20 HTTP/1.1" 200 23
+2024-03-27 21:29:31,032 - ERROR - Infinity polling: polling exited
+2024-03-27 21:29:31,032 - ERROR - Break infinity polling
+2024-03-27 21:29:36,253 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2024-03-27 21:29:37,841 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getMe HTTP/1.1" 200 194
+2024-03-27 21:29:37,846 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2024-03-27 21:29:43,616 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 559
+2024-03-27 21:29:43,617 - DEBUG - User 1503721661 started the bot
+2024-03-27 21:29:43,627 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2024-03-27 21:29:44,913 - DEBUG - https://api.telegram.org:443 "POST /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/sendMessage?chat_id=1503721661&text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82%21+%D0%AF+%D0%B1%D0%BE%D1%82%2C+%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B9+%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B5%D1%82+GPT+%D0%B4%D0%BB%D1%8F+%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D0%BE%D0%B2+%D0%BD%D0%B0+%D0%B2%D0%B0%D1%88%D0%B8+%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B.+%D0%9F%D1%80%D0%BE%D1%81%D1%82%D0%BE+%D0%BD%D0%B0%D0%BF%D0%B8%D1%88%D0%B8+%D0%BC%D0%BD%D0%B5+%D1%87%D1%82%D0%BE-%D0%BD%D0%B8%D0%B1%D1%83%D0%B4%D1%8C.&reply_to_message_id=826 HTTP/1.1" 200 1330
+2024-03-27 21:29:49,253 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817732004&timeout=20 HTTP/1.1" 200 499
+2024-03-27 21:29:49,255 - DEBUG - User 1503721661 sent a message: 1+1=
+2024-03-27 21:29:49,258 - DEBUG - Starting new HTTP connection (1): localhost:1234
+2024-03-27 21:29:55,943 - DEBUG - http://localhost:1234 "POST /v1/chat/completions HTTP/1.1" 200 493
+2024-03-27 21:29:55,944 - DEBUG - Получили ответ от  GPT: Два
+2024-03-27 21:29:55,945 - DEBUG - Сохранение истории от пользователя 1503721661
+2024-03-27 21:29:55,947 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2024-03-27 21:29:57,502 - DEBUG - https://api.telegram.org:443 "POST /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/sendMessage?chat_id=1503721661&text=%D0%94%D0%B2%D0%B0&reply_to_message_id=828 HTTP/1.1" 200 822
+2024-03-27 21:30:07,605 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817732005&timeout=20 HTTP/1.1" 200 561
+2024-03-27 21:30:07,606 - DEBUG - User 1503721661 requested logs
+2024-03-27 21:30:08,092 - DEBUG - https://api.telegram.org:443 "POST /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/sendDocument?chat_id=1503721661 HTTP/1.1" 200 535
+2024-03-27 21:30:27,699 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817732006&timeout=20 HTTP/1.1" 200 23
+2024-03-27 21:30:47,792 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817732006&timeout=20 HTTP/1.1" 200 23
+2024-03-27 21:31:07,900 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817732006&timeout=20 HTTP/1.1" 200 23
+2024-03-27 21:31:27,987 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817732006&timeout=20 HTTP/1.1" 200 23
+2024-03-27 21:31:48,081 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817732006&timeout=20 HTTP/1.1" 200 23
+2024-03-27 21:32:08,192 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817732006&timeout=20 HTTP/1.1" 200 23
+2024-03-27 21:32:28,281 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817732006&timeout=20 HTTP/1.1" 200 23
+2024-03-27 21:32:48,377 - DEBUG - https://api.telegram.org:443 "GET /bot6547363557:AAGANK3kV2ywllU3LAAXzO7AxIUrtiHj0G0/getUpdates?offset=817732006&timeout=20 HTTP/1.1" 200 23
+2024-03-27 21:33:06,383 - ERROR - Infinity polling: polling exited
+2024-03-27 21:33:06,383 - ERROR - Break infinity polling
